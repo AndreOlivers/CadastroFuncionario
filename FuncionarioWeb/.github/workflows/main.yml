@@ -22,6 +22,14 @@ jobs:
       - name: Restaurar pacotes NuGet
         run: dotnet restore
 
+      - name: Criar config.ini temporário
+        run: |
+          echo "[MSSQLSERVER]" > FuncionarioWeb/config.ini
+          echo "ADDRESS=localhost" >> FuncionarioWeb/config.ini
+          echo "DATABASE=TestDB" >> FuncionarioWeb/config.ini
+          echo "TRUSTED_CONNECTION=True" >> FuncionarioWeb/config.ini
+          echo "TRUST_SERVER_CERTIFICATE=True" >> FuncionarioWeb/config.ini
+
       - name: Build do projeto
         run: dotnet build --no-restore --configuration Release
 
