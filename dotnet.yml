@@ -1,0 +1,29 @@
+name: Build .NET MVC App
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar o código
+        uses: actions/checkout@v3
+
+      - name: Instalar .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restaurar pacotes NuGet
+        run: dotnet restore
+
+      - name: Build do projeto
+        run: dotnet build --no-restore --configuration Release
+
+      - name: Publicar aplicação
+        run: dotnet publish --no-build --configuration Release --output ./publish
