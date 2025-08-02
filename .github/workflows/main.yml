@@ -33,5 +33,8 @@ jobs:
       - name: Build do projeto
         run: dotnet build --no-restore --configuration Release
 
+      - name: Executar testes
+        run: dotnet test --no-build --configuration Release
+
       - name: Publicar aplicação
         run: dotnet publish --no-build --configuration Release --output ./publish
