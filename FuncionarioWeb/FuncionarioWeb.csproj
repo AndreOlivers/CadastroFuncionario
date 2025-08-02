@@ -10,7 +10,7 @@
     <PackageReference Include="FluentNHibernate" Version="3.4.1" />
     <PackageReference Include="NHibernate" Version="5.5.2" />
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
-    <None Include=".github\workflows\dotnet.yml" />
+    <None Include=".github\workflows\main.yml" />
     <None Include="config.ini">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
