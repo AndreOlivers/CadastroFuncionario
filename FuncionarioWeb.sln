@@ -5,13 +5,6 @@ VisualStudioVersion = 17.14.36202.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncionarioWeb", "FuncionarioWeb\FuncionarioWeb.csproj", "{CF8BC75C-A9CF-4909-996B-C1043A58E7B2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{52825638-630A-4722-A85E-172A94E89876}"
-	ProjectSection(SolutionItems) = preProject
-		dotnet.yml = dotnet.yml
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncionarioTests", "FuncionarioTests\FuncionarioTests.csproj", "{37629306-F665-4EB0-9365-C29FC208D4E6}"
 EndProject
 Global
@@ -31,9 +24,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{52825638-630A-4722-A85E-172A94E89876} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9C2BAD1E-941A-47AD-A31C-017B7046F241}
